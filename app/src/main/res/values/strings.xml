@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Droplet analysis</string>
+    <string name="photo">图片</string>
+    <string name="Analysis">分析图片</string>
+    <string name="Open_Camera">打开摄像头</string>
+    <string name="Open_album">打开相册</string>
+</resources>

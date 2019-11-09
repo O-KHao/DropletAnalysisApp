@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/PHOTO"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:layout_marginBottom="150dp"
+        android:background="#CDFFFFFF"
+        android:contentDescription="@string/photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/ic_camera_background" />
+
+    <Button
+        android:id="@+id/ANALYSIS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginBottom="105dp"
+        android:text="@string/Analysis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PHOTO" />
+
+    <ImageButton
+        android:id="@+id/OPEN_CAMERA"
+        android:layout_width="25dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="17dp"
+        android:background="#00000000"
+        android:contentDescription="@string/Open_Camera"
+        app:layout_constraintBottom_toTopOf="@+id/PHOTO"
+        app:layout_constraintEnd_toStartOf="@+id/OPEN_ALBUM"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_camera" />
+
+    <ImageButton
+        android:id="@+id/OPEN_ALBUM"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="17dp"
+        android:background="#00000000"
+        android:contentDescription="@string/Open_album"
+        app:layout_constraintBottom_toTopOf="@+id/PHOTO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/OPEN_CAMERA"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_album_foreground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
